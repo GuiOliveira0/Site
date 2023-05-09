@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Spartan;
+    src: url("../fonts/Spartan-Bold.ttf");
+}
+
+* { box-sizing: border-box }
+
+body {
+    margin: 0;
+    font-family: Spartan;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding: 7px 30px 30px 30px;
+}
+
+header img {
+    width: 130px;
+}
+
+#menu {
+    background-color: #00BF62;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 0px 18px;
+    text-decoration: none;
+    height: 40px;
+    transition: .4s;
+}
+
+#menu a:hover{
+    background-color: #ffffff;
+    color: #00BF62;
+}
+
+main {
+    padding: 7px 30px 30px 30px;
+}
+
+.sessao {
+    margin: 20px 50px 60px 50px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 50px;
+    overflow: hidden;
+    height: 320px;
+}
+
+.prodPromocao {
+    height: 360px;
+}
+
+.barra {
+    width: 10px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #db1d04;
+    margin-right: 7px;
+}
+
+.barra-prod {
+    background-color: #00BF62;
+}
+
+.barra-higi {
+    background-color: #1574c2;
+}
+.barra-doce {
+    background-color: #ffe606;
+}
+.barra-bebi {
+    background-color: #b170ee;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.produto {
+    border: 3px solid #EFEFEF;
+    border-radius: 7px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.produto:hover {
+    border: 3px solid #f04b35;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prod:hover {
+    border: 3px solid #00BF62;
+}
+
+.higiene:hover {
+    border: 3px solid #1574c2;
+}
+
+.doces:hover {
+    border: 3px solid #ffe606;
+}
+
+.bebidas:hover {
+    border: 3px solid #b170ee;
+}
+
+.produto h4, .produto h3, .produto h2 {
+    margin-left: 20px;
+}
+
+.preco-promocao {
+    color: #db1d04;
+}
+
+.imagem-produto {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+
+#endereco {
+    padding: 7px 30px 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#informacoes div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#informacoes img {
+    width: 40px;
+    height: 40px;
+}
+
+#endereco > img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #AEAEAE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+footer img {
+    width: 45px;
+    margin: 7px 10px;
+}
+
+#horarios {
+    color: #313131;
+}
+
+.catalogo {
+    height: 650px;
+}
+
+@media screen and (max-width: 1230px) {
+    #endereco > img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #informacoes img {
+        display: none;
+    }
+
+    footer img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    #menu {
+        flex-direction: column;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .produtos {
+        height: 960px;
+    }
+
+    .prodPromocao {
+        height: 1055px;
+    }
+
+    .sessao {
+        margin: 20px 20px 60px 20px;;
+    }
+}
+
+
